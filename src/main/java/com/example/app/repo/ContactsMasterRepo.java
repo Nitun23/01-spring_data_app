@@ -9,10 +9,10 @@ import com.example.app.entity.ContactsMasterEntity;
 
 public interface ContactsMasterRepo extends JpaRepository<ContactsMasterEntity, Serializable> {
 	
-	/*
-	 * public ContactsMasterEntity findByContactName(String contactName);
-	 * 
-	 * public ContactsMasterEntity findByContactNameAndContactNumber(String
-	 * contactName,Long contactNumber);
-	 */
+
+	  public ContactsMasterEntity findByContactName(String contactName);
+	  
+	  public ContactsMasterEntity findByContactNameAndContactNumber(String
+	  contactName,Long contactNumber);
+	 
 }
